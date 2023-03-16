@@ -5,21 +5,29 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 const getAbsolutePath = (target) => path.resolve(__dirname, target);
 
-const webpackMode = process.env.NODE_ENV || "production";
+const webpackMode = "development"; //development, production 
 
 // CommonJS 방식의 모듈 내보내기
 module.exports = {
   // 번들링 모드 설정
   mode: webpackMode,
-
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
+    ],
+  },
   // 엔트리 파일 설정
-  entry: "./src/index.js",
+  entry: "./src/index.ts",
   // 아웃풋 파일 출력 설정
   output: {
     // 파일 이름
     filename: webpackMode === "production" ? "[name].min.js" : "[name].js",
     // 경로
-    path: path.resolve(__dirname, "./dist"),
+    path: path.resolve(__dirname, "dist"),
   },
 
   // 감시 활성화
@@ -32,7 +40,7 @@ module.exports = {
   },
   resolve: {
     // 생략 가능한 확장자
-    // extensions: [".js", ".jsx", ".json"],
+    extensions: ['.tsx', '.ts', '.js'],
     // 절대 경로 별칭 등록
     // alias: {
     //   "@modules": getAbsolutePath("src/modules/"),
