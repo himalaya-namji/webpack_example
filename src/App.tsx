@@ -1,3 +1,8 @@
+import { Image } from './components/Image/Image';
 export const App = () => {
-	return <div>App</div>;
+	return (
+		<div>
+			<Image />
+		</div>
+	);
 };
