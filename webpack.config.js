@@ -25,6 +25,11 @@ module.exports = {
 					name: 'assets/[name].[ext]?[hash]', //[폴더명][파일명][ext]
 				},
 			},
+			 // CSS 파일 로더 설정
+			 {
+				test: /\.css$/i,
+				use: ['style-loader', 'css-loader']
+			  }
 		],
 	},
 	// 엔트리 파일 설정
