@@ -19,8 +19,11 @@ module.exports = {
 				exclude: /node_modules/,
 			},
 			{
-				test: /\.svg$/,
+				test: /\.(svg|jpg)$/,
 				loader: 'file-loader',
+				options: {
+					name: 'assets/[name].[ext]?[hash]', //[폴더명][파일명][ext]
+				},
 			},
 		],
 	},
