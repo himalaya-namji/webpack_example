@@ -16,7 +16,17 @@
   \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"bf97734ba4715d34a87ae3a3b23256d5.svg\");\n\n//# sourceURL=webpack://webpack_example/./src/assets/Icons/star.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"assets/star.svg?bf97734ba4715d34a87ae3a3b23256d5\");\n\n//# sourceURL=webpack://webpack_example/./src/assets/Icons/star.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/Image/lion.jpg":
+/*!***********************************!*\
+  !*** ./src/assets/Image/lion.jpg ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"assets/lion.jpg?69fcab75d9809492ad2f5018bec98879\");\n\n//# sourceURL=webpack://webpack_example/./src/assets/Image/lion.jpg?");
 
 /***/ }),
 
@@ -106,7 +116,7 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
   \*********************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.App = void 0;\nconst jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nconst Image_1 = __webpack_require__(/*! ./components/Image/Image */ \"./src/components/Image/Image.tsx\");\nconst App = () => {\n    return ((0, jsx_runtime_1.jsx)(\"div\", { children: (0, jsx_runtime_1.jsx)(Image_1.Image, {}) }));\n};\nexports.App = App;\n\n\n//# sourceURL=webpack://webpack_example/./src/App.tsx?");
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.App = void 0;\nconst jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nconst Image_1 = __webpack_require__(/*! ./components/Image/Image */ \"./src/components/Image/Image.tsx\");\nconst App = () => {\n    return ((0, jsx_runtime_1.jsxs)(\"div\", { children: [(0, jsx_runtime_1.jsx)(\"h1\", { children: \"\\uC6F9\\uD329 \\uD14C\\uC2A4\\uD2B8\" }), (0, jsx_runtime_1.jsx)(Image_1.Image, {})] }));\n};\nexports.App = App;\n\n\n//# sourceURL=webpack://webpack_example/./src/App.tsx?");
 
 /***/ }),
 
@@ -116,7 +126,7 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexpo
   \****************************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.Image = void 0;\nconst jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nconst star_svg_1 = __importDefault(__webpack_require__(/*! ../../assets/Icons/star.svg */ \"./src/assets/Icons/star.svg\"));\nconst Image = () => {\n    return ((0, jsx_runtime_1.jsx)(\"div\", { children: (0, jsx_runtime_1.jsx)(\"img\", { src: star_svg_1.default }) }));\n};\nexports.Image = Image;\n\n\n//# sourceURL=webpack://webpack_example/./src/components/Image/Image.tsx?");
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.Image = void 0;\nconst jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nconst star_svg_1 = __importDefault(__webpack_require__(/*! ../../assets/Icons/star.svg */ \"./src/assets/Icons/star.svg\"));\nconst lion_jpg_1 = __importDefault(__webpack_require__(/*! ../../assets/Image/lion.jpg */ \"./src/assets/Image/lion.jpg\"));\nconst Image = () => {\n    return ((0, jsx_runtime_1.jsxs)(\"div\", { children: [(0, jsx_runtime_1.jsx)(\"img\", { src: star_svg_1.default }), (0, jsx_runtime_1.jsx)(\"img\", { width: 200, src: lion_jpg_1.default })] }));\n};\nexports.Image = Image;\n\n\n//# sourceURL=webpack://webpack_example/./src/components/Image/Image.tsx?");
 
 /***/ }),
 
